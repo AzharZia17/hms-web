@@ -43,21 +43,74 @@ export function ProductInteractiveView({
   const colorVariantImage: ProductImage | undefined = product.colorImages?.[selectedColor];
 
   const displayedImages: ProductImage[] = useMemo(() => {
-    if (!colorVariantImage) return product.images;
-    // Put the selected color image at index 0 so it displays as the main view
-    const others = product.images.filter((img) => img.src !== colorVariantImage.src);
-    return [colorVariantImage, ...others];
+    return [colorVariantImage ?? product.images[0]];
   }, [colorVariantImage, product.images]);
 
   const hasPhotoForColor = Boolean(colorVariantImage);
 
+  // Colour panel — rendered in two places: mobile (above image) and desktop (in right column)
+  const colourPanel = product.onlyColours ? (
+    <div className="rounded-3xl bg-secondary/70 p-5 ring-1 ring-black/[0.04]">
+      <h2 className="font-display text-xs font-bold uppercase tracking-[0.18em] text-navy">
+        <T>{"Available colour"}</T>
+      </h2>
+      <p className="mt-3 text-sm font-semibold text-navy">
+        <T>{product.onlyColours.join(", ")}</T>{" "}
+        <span className="font-normal text-ink-muted">
+          · <T>{"No other colours available."}</T>
+        </span>
+      </p>
+    </div>
+  ) : (
+    <div className="rounded-3xl bg-secondary/70 p-5 ring-1 ring-black/[0.04]">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h2 className="font-display text-xs font-bold uppercase tracking-[0.18em] text-navy">
+          <T>{"Available colours"}</T>
+        </h2>
+        <span className="text-xs font-medium text-navy">
+          <T>{"Selected colour:"}</T>{" "}
+          <strong className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">
+            <T>{selectedColor}</T>
+          </strong>
+        </span>
+      </div>
+
+      <ColourSwatches
+        className="mt-3.5"
+        selectedColor={selectedColor}
+        onSelectColor={handleSelectColor}
+      />
+
+      <p className="mt-3.5 text-xs text-ink-muted">
+        {hasPhotoForColor ? (
+          <span className="inline-flex items-center gap-1.5 font-medium text-emerald-700">
+            <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
+            <T>{"Live photo preview in"}</T> <T>{selectedColor}</T>
+          </span>
+        ) : (
+          <span>
+            <T>{"Available in all 8 colours. Mention your chosen colour in your enquiry."}</T>
+          </span>
+        )}
+      </p>
+    </div>
+  );
+
   return (
     <>
-      <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+      <div className="grid gap-8 lg:grid-cols-2 lg:gap-20">
+
+        {/* ── Mobile-only: colour picker ABOVE the image ── */}
+        <div className="lg:hidden">
+          {colourPanel}
+        </div>
+
+        {/* ── Product image (left col on desktop, full-width on mobile) ── */}
         <Reveal y={0}>
           <ProductGallery images={displayedImages} />
         </Reveal>
 
+        {/* ── Right column: all product details ── */}
         <Reveal delay={0.1} className="lg:pt-4">
           {categoryName && (
             <Link href={`/products?category=${product.category}`} className="eyebrow">
@@ -99,45 +152,10 @@ export function ProductInteractiveView({
             </CardContent>
           </Card>
 
-          {product.onlyColours ? (
-            <div className="mt-4 rounded-3xl bg-secondary/70 p-5 ring-1 ring-black/[0.04]">
-              <h2 className="font-display text-xs font-bold uppercase tracking-[0.18em] text-navy"><T>{"Available colour"}</T></h2>
-              <p className="mt-3 text-sm font-semibold text-navy"><T>{product.onlyColours.join(", ")}</T> <span className="font-normal text-ink-muted">· <T>{"No other colours available."}</T></span></p>
-            </div>
-          ) : (
-          <div className="mt-4 rounded-3xl bg-secondary/70 p-5 ring-1 ring-black/[0.04]">
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <h2 className="font-display text-xs font-bold uppercase tracking-[0.18em] text-navy">
-                <T>{"Available colours"}</T>
-              </h2>
-              <span className="text-xs font-medium text-navy">
-                <T>{"Selected colour:"}</T>{" "}
-                <strong className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">
-                  <T>{selectedColor}</T>
-                </strong>
-              </span>
-            </div>
-
-            <ColourSwatches
-              className="mt-3.5"
-              selectedColor={selectedColor}
-              onSelectColor={handleSelectColor}
-            />
-
-            <p className="mt-3.5 text-xs text-ink-muted">
-              {hasPhotoForColor ? (
-                <span className="inline-flex items-center gap-1.5 font-medium text-emerald-700">
-                  <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <T>{"Live photo preview in"}</T> <T>{selectedColor}</T>
-                </span>
-              ) : (
-                <span>
-                  <T>{"Available in all 8 colours. Mention your chosen colour in your enquiry."}</T>
-                </span>
-              )}
-            </p>
+          {/* ── Desktop-only: colour picker in its normal position ── */}
+          <div className="mt-4 hidden lg:block">
+            {colourPanel}
           </div>
-          )}
 
           <p className="mt-3 px-2 text-xs text-ink-muted">
             <T>{"Dimensions, thread sizes and material grades: please enquire for the full specification."}</T>

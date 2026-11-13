@@ -59,7 +59,6 @@ export const products: Product[] = [
     summary: "A tall swan-neck spout with a single HMS handle for table-mounted sinks.",
     images: [
       img("variants/sink-cock-table-swan-white", "White swan-neck table-mounted sink cock with HMS handle on stone base", 1033, 1523),
-      img("sink-cock-table-swan-alt", "White swan-neck table-mounted sink cock with HMS handle", 1033, 1523),
     ],
     colorImages: {
       "White": img("variants/sink-cock-table-swan-white", "White Side Piller Cock", 1033, 1523),
@@ -122,7 +121,6 @@ export const products: Product[] = [
     summary: "Compact angle valve with a round wall flange for concealed supply lines.",
     images: [
       img("variants/angle-valve-white", "White T Cock angle valve with threaded outlet and round wall flange", 963, 1634),
-      img("angle-valve", "White angle valve high-resolution studio photograph", 942, 1600),
     ],
     colorImages: {
       "White": img("variants/angle-valve-white", "White T Cock", 963, 1634),
@@ -204,7 +202,6 @@ export const products: Product[] = [
     summary: "Round white shower head with a dark accent ring and chrome-finish neck.",
     images: [
       img("variants/shower-head-round-white", "Round white shower head with black accent ring and chrome neck", 1254, 1254),
-      img("shower-head-round", "Round shower head studio photograph", 1293, 1216),
     ],
     colorImages: {
       "White": img("variants/shower-head-round-white", "White Round Shower Head", 1254, 1254),
@@ -226,7 +223,6 @@ export const products: Product[] = [
     summary: "Square overhead shower head with a fine grid of spray nozzles.",
     images: [
       img("variants/shower-head-square-white", "Square white overhead shower head with grid of spray nozzles", 1421, 1107),
-      img("shower-head-square", "Square overhead shower head alternate photograph", 1681, 1441),
     ],
     colorImages: {
       "White": img("variants/shower-head-square-white", "White Square Shower Head", 1421, 1107),
