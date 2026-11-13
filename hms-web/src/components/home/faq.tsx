@@ -8,7 +8,7 @@ const faqs = [
   ["What does HMS Plastic make?", "HMS Plastic offers sanitary ware and bathroom fittings, including taps and cocks, mixers, shower heads, health faucets, shower hoses and floor drains."],
   ["How do I enquire about a product?", "Open any product page and use the Enquire button, or message us directly on WhatsApp — the chat button is on every page."],
   ["Where can I find full specifications and product codes?", "Product pages show the details we can confirm from the product itself. Dimensions, thread sizes and catalogue codes are shared on request through an enquiry."],
-  ["What colours are available?", "Every HMS product is available in White, Black, Pink, Blue, Sage Green, Gray and Beige. Our photos show the white finish — tell us your colour when you enquire."],
+  ["What colours are available?", "Every HMS product is available in White, Black, Pink, Blue, Sage Green, Gray, Beige and Ivory. Our photos show the white finish — tell us your colour when you enquire."],
   ["Can I ask about a product that isn't listed?", "Yes. The website shows our current online range — contact the team to ask whether a specific item is available."],
 ];
 

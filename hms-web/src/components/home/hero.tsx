@@ -150,7 +150,7 @@ export function Hero() {
 
       <div className="mx-auto grid min-h-svh w-full max-w-[1280px] items-center gap-9 px-5 pt-24 sm:gap-12 sm:px-8 sm:pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-12 lg:pt-32">
         <motion.div style={{ y: textY, opacity: textOpacity }}>
-          <motion.span {...rise(0.1)} className="eyebrow"><T>{"Sanitary Ware & Bathroom Fittings"}</T></motion.span>
+          <motion.span {...rise(0.1)} className="eyebrow"><T>{"PLASTIC SANITARY FITTING & BATHROOM ACCESSORIES"}</T></motion.span>
           <h1 className="mt-5 text-[2.45rem] sm:mt-7 font-medium leading-[1.04] tracking-[-0.045em] text-white min-[400px]:text-[3rem] sm:text-6xl lg:text-[5.2rem]" aria-label={t("Redefining Modern Bathroom Living.")}>
             {headline.map(({ w, gold }, i) => (
               <span key={w} aria-hidden className="mr-[0.22em] inline-block overflow-hidden pb-[0.14em] align-bottom">

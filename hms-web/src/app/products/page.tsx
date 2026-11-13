@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/page-hero";
 import { Container } from "@/components/ui/container";
+import { CatalogueSection } from "@/components/home/catalogue-section";
 import { ProductCatalogue } from "@/components/products/product-catalogue";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function ProductsPage() {
           </Suspense>
         </Container>
       </section>
+      <CatalogueSection />
     </>
   );
 }

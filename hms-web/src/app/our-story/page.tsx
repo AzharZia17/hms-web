@@ -37,8 +37,6 @@ export default function OurStoryPage() {
             <blockquote className="mt-6 font-display text-[1.75rem] font-medium leading-[1.2] tracking-[-0.025em] text-navy sm:text-4xl lg:text-[2.6rem]"> <T>{"True success is not just in business, but in the trust of people."}</T> </blockquote>
             <div className="mt-8 h-px w-16 bg-gold" />
             <p className="mt-8 text-lg leading-relaxed text-ink-muted sm:text-xl sm:leading-relaxed"> <T>{"A visionary leader with unwavering values, integrity and a lifelong commitment to trust and quality. His legacy continues to inspire our journey towards a better future."}</T> </p>
-            <p className="mt-8 inline-flex items-center gap-3 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-navy ring-1 ring-hairline">
-              <span className="h-2 w-2 rounded-full bg-gold" /> <T>{"HMS Plastic — A Product by Four Brothers"}</T> </p>
             <dl className="mt-10 grid gap-3 sm:grid-cols-3">
               {[["Trust", "of people"], ["Integrity", "in every step"], ["Quality", "lifelong commitment"]].map(([t, d]) => (
                 <div key={t} className="rounded-2xl bg-secondary/70 p-5 ring-1 ring-hairline">

@@ -10,7 +10,7 @@ export const categories: Category[] = [
   {
     slug: "mixers",
     name: "Mixers",
-    description: "Sink, basin and wall mixers, including a 3-in-1 wall mixer for bath and shower.",
+    description: "Sink, basin and wall mixers, including a wall shower mixer for bath and shower.",
     coverProduct: "wall-mixer-3in1",
   },
   {
@@ -22,7 +22,7 @@ export const categories: Category[] = [
   {
     slug: "health-faucets",
     name: "Health Faucets",
-    description: "Toilet shower sets in white and chrome, with hose and wall holder.",
+    description: "Toilet shower sets in white and chrome, with connection pipe and wall holder.",
     coverProduct: "health-faucet-chrome",
   },
   {
@@ -64,7 +64,7 @@ export const collections: Collection[] = [
     tagline: "Quietly essential",
     description: "Square floor drains with a flush profile and removable grating.",
     categories: ["floor-drains"],
-    coverProduct: "floor-drain-plain",
+    coverProduct: "floor-drain-star",
   },
 ];
 

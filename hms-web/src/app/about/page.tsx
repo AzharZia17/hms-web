@@ -3,6 +3,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { ButtonLink } from "@/components/ui/cta";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
+import { Statement } from "@/components/home/statement";
 import { AboutSection } from "@/components/home/about-section";
 import { ProductFeatures } from "@/components/home/product-features";
 import { WhyChoose } from "@/components/home/why-choose";
@@ -38,6 +39,7 @@ export default function AboutPage() {
           </Reveal>
         </Container>
       </section>
+      <Statement />
       <WhyChoose />
       <ProductFeatures />
       <CtaSection />

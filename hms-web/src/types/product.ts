@@ -37,13 +37,15 @@ export interface Product {
   slug: string;
   name: string;
   category: CategorySlug;
-  /** Add the real catalogue code here when available. */
-  code?: string;
   summary: string;
   /** Primary image first, then any additional views. */
   images: [ProductImage, ...ProductImage[]];
+  /** Optional mapping of color name to specific photo variant. */
+  colorImages?: Partial<Record<string, ProductImage>>;
   /** Only details that are visible in the supplied photography. */
   specs: ProductSpec[];
+  /** Set when the product comes only in these finishes (not the standard colour range). */
+  onlyColours?: string[];
   featured?: boolean;
 }
 

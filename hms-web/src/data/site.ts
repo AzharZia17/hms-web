@@ -47,5 +47,6 @@ export const navLinks = [
   { href: "/products", label: "Products", dropdown: true },
   { href: "/collections", label: "Collections" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/environment", label: "Environment" },
   { href: "/contact", label: "Contact" },
 ] as const;

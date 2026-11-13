@@ -80,19 +80,37 @@ export async function Footer() {
           </ul>
         </div>
       </Container>
-      <div className="relative bg-white">
-        <Container className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:gap-8">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-navy"><T>{"Project by"}</T></p>
-          <div className="grid w-full grid-cols-2 items-center gap-3 sm:flex sm:w-auto sm:gap-8">
-            <Image src="/brand/partners/ilmas.png" alt="Ilmas Sanitary Fittings" width={1075} height={319} className="h-auto max-h-14 w-full rounded-2xl object-contain p-2 ring-1 ring-navy/10 sm:h-14 sm:w-auto sm:p-0 sm:ring-0" />
-            <Image src="/brand/partners/luna.png" alt="Luna Group of Industries" width={990} height={227} className="h-auto max-h-14 w-full rounded-2xl object-contain p-2 ring-1 ring-navy/10 sm:h-14 sm:w-auto sm:p-0 sm:ring-0" />
-          </div>
-        </Container>
-      </div>
       <div className="relative border-t border-white/10">
         <Container className="flex flex-col items-start justify-between gap-4 pb-28 pt-6 text-xs sm:flex-row sm:items-center lg:pb-6">
           <p>© {year} <T>{"HMS Plastic"}</T> · <T>{site.trademark}</T> · <T>{"A Product by Four Brothers."}</T> <T>{"All rights reserved."}</T></p>
-          <BackToTop />
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <div className="flex items-center gap-2.5">
+              <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+                <T>{"Project by"}</T>
+              </span>
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center rounded-xl bg-white px-2.5 py-1 shadow-xs ring-1 ring-black/5">
+                  <Image
+                    src="/brand/partners/ilmas.png"
+                    alt="Ilmas Sanitary Fittings"
+                    width={1075}
+                    height={319}
+                    className="h-4 sm:h-5 w-auto object-contain"
+                  />
+                </span>
+                <span className="inline-flex items-center rounded-xl bg-white px-2.5 py-1 shadow-xs ring-1 ring-black/5">
+                  <Image
+                    src="/brand/partners/luna.png"
+                    alt="Luna Group of Industries"
+                    width={990}
+                    height={227}
+                    className="h-4 sm:h-5 w-auto object-contain"
+                  />
+                </span>
+              </div>
+            </div>
+            <BackToTop />
+          </div>
         </Container>
       </div>
     </footer>

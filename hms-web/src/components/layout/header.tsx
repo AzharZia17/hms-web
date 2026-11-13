@@ -8,7 +8,6 @@ import { ArrowUpRight, ChevronDown, Menu, Search } from "lucide-react";
 import { navLinks } from "@/data/site";
 import { categories } from "@/data/categories";
 import { cn } from "@/lib/utils";
-import { ButtonLink } from "@/components/ui/cta";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Logo } from "./logo";
@@ -125,7 +124,6 @@ export function Header() {
               <Search className="h-5 w-5" />
             </button>
             <LanguageSwitch className="hidden sm:inline-flex" />
-            <ButtonLink href="/contact" variant="gold" className="hidden px-6 py-3 sm:inline-flex"> <T>{"Contact Us"}</T> </ButtonLink>
             <button type="button" onClick={() => setMobileOpen(true)} aria-label="Open menu" className="grid h-11 w-11 place-items-center rounded-full bg-navy text-white lg:hidden">
               <Menu className="h-5 w-5" />
             </button>
@@ -175,7 +173,6 @@ export function Header() {
               ))}
             </ul>
             <div className="mt-6 flex justify-center"><LanguageSwitch className="text-white hover:bg-white/10" /></div>
-            <ButtonLink href="/contact" variant="gold" className="mt-4 w-full" onClick={() => setMobileOpen(false)}> <T>{"Contact Us"}</T> </ButtonLink>
           </nav>
         </SheetContent>
       </Sheet>
