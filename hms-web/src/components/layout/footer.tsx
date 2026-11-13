@@ -40,7 +40,7 @@ export async function Footer() {
       <Container className="relative grid grid-cols-2 gap-x-6 gap-y-12 py-14 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] lg:py-20">
         <div className="col-span-2 lg:col-span-1">
           <Link href="/" aria-label="HMS Plastic — home" className="inline-block rounded-3xl bg-white p-3">
-            <Image src="/brand/hms-logo-transparent.png" alt="HMS Plastic" width={120} height={100} className="h-16 w-auto object-contain" />
+            <Image src="/brand/hms-logo-transparent.webp" alt="HMS Plastic" width={120} height={100} className="h-16 w-auto object-contain" />
           </Link>
           <p className="mt-6 max-w-sm text-sm leading-relaxed"> <T>{"HMS Plastic designs and supplies sanitary ware and bathroom fittings — practical, well-finished products for modern bathrooms."}</T> </p>
           <SocialIcons className="mt-6" />
@@ -91,7 +91,7 @@ export async function Footer() {
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center rounded-xl bg-white px-2.5 py-1 shadow-xs ring-1 ring-black/5">
                   <Image
-                    src="/brand/partners/ilmas.png"
+                    src="/brand/partners/ilmas.webp"
                     alt="Ilmas Sanitary Fittings"
                     width={1075}
                     height={319}
@@ -100,7 +100,7 @@ export async function Footer() {
                 </span>
                 <span className="inline-flex items-center rounded-xl bg-white px-2.5 py-1 shadow-xs ring-1 ring-black/5">
                   <Image
-                    src="/brand/partners/luna.png"
+                    src="/brand/partners/luna.webp"
                     alt="Luna Group of Industries"
                     width={990}
                     height={227}

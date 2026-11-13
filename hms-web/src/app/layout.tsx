@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "HMS Plastic — Redefining Modern Bathroom Living",
     description: site.description,
-    images: [{ url: "/brand/hms-logo.png", width: 800, height: 800, alt: "HMS Plastic logo" }],
+    images: [{ url: "/brand/hms-logo.webp", width: 800, height: 800, alt: "HMS Plastic logo" }],
   },
   twitter: { card: "summary", title: "HMS Plastic", description: site.description },
 };

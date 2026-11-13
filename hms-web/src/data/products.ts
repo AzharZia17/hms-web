@@ -31,7 +31,7 @@ const img = (
   height: number,
   extra: Partial<ProductImage> = {},
 ): ProductImage => {
-  const ext = file.includes(".") ? "" : ".png";
+  const ext = file.includes(".") ? "" : ".webp";
   const base = file
     .replace(/\.(png|jpg|jpeg)$/, "")
     .replace(/-alt$/, "")

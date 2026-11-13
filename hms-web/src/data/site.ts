@@ -14,14 +14,14 @@ export const site = {
     "HMS Plastic designs and supplies sanitary ware and bathroom fittings — taps, mixers, shower heads, health faucets, hoses and floor drains.",
   /** From the HMS catalogue (back page). */
   phones: ["0300-7467419", "0300-4502303"] as readonly string[],
-  /** WhatsApp number supplied by the client: +92 323 7477816. */
-  phone: env(process.env.NEXT_PUBLIC_CONTACT_PHONE) ?? "+92 323 7477816",
+  /** WhatsApp number supplied by the client: +92 321 6401604. */
+  phone: env(process.env.NEXT_PUBLIC_CONTACT_PHONE) ?? "+92 321 6401604",
   trademark: "RTM No: 903238",
   parent: "Four Brothers",
   email: env(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
   address: env(process.env.NEXT_PUBLIC_CONTACT_ADDRESS) ?? "Super Star Road Link, G.T Road, Kangniwala, Gujranwala",
   /** Digits only, with country code, e.g. 923001234567 */
-  whatsapp: digits(env(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER)) ?? "923237477816",
+  whatsapp: digits(env(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER)) ?? "923216401604",
   /** Google Maps embed URL (the src of the iframe from Share → Embed a map). */
   mapEmbedUrl: env(process.env.NEXT_PUBLIC_MAP_EMBED_URL),
   social: {

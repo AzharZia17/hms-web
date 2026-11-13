@@ -22,7 +22,7 @@ export default function OurStoryPage() {
           <Reveal className="mx-auto w-full max-w-md">
             <div className="rounded-4xl bg-white p-2.5 shadow-lift ring-1 ring-hairline">
               <div className="relative aspect-[880/1060] overflow-hidden rounded-3xl">
-                <Image src="/images/story/founder.jpg" alt="Haji Muhammad Shafi, founder of HMS Plastic" fill priority sizes="(min-width:1024px) 40vw, 90vw" className="object-cover" />
+                <Image src="/images/story/founder.webp" alt="Haji Muhammad Shafi, founder of HMS Plastic" fill priority sizes="(min-width:1024px) 40vw, 90vw" className="object-cover" />
               </div>
             </div>
             <div className="mt-6 text-center lg:text-left">
@@ -55,9 +55,9 @@ export default function OurStoryPage() {
             <h2 className="mt-4 text-3xl font-medium sm:text-4xl"><T>{"A project by Ilmas and Luna."}</T></h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted"><T>{"HMS Plastic is a Four Brothers product, carried forward in the spirit of Haji Muhammad Shafi (Luna Wale) and brought to you as a project of Ilmas Sanitary Fittings and Luna Group of Industries — with the same promise of trust and quality."}</T></p>
             <div className="mt-10 flex flex-col items-center justify-center gap-6 rounded-4xl bg-white p-8 shadow-lift ring-1 ring-hairline sm:flex-row sm:gap-12">
-              <Image src="/brand/partners/ilmas.png" alt="Ilmas Sanitary Fittings" width={1075} height={319} className="h-16 w-auto object-contain sm:h-20" />
+              <Image src="/brand/partners/ilmas.webp" alt="Ilmas Sanitary Fittings" width={1075} height={319} className="h-16 w-auto object-contain sm:h-20" />
               <span aria-hidden className="hidden h-12 w-px bg-hairline sm:block" />
-              <Image src="/brand/partners/luna.png" alt="Luna Group of Industries" width={990} height={227} className="h-16 w-auto object-contain sm:h-20" />
+              <Image src="/brand/partners/luna.webp" alt="Luna Group of Industries" width={990} height={227} className="h-16 w-auto object-contain sm:h-20" />
             </div>
           </Reveal>
         </Container>

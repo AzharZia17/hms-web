@@ -79,7 +79,7 @@ export function WhatsAppWidget() {
           >
             <div className="flex items-center gap-3 bg-whatsapp-dark px-4 py-3.5 text-white">
               <span className="relative grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-full bg-white">
-                <Image src="/brand/hms-logo-transparent.png" alt="" width={44} height={36} className="h-8 w-auto" />
+                <Image src="/brand/hms-logo-transparent.webp" alt="" width={44} height={36} className="h-8 w-auto" />
               </span>
               <div className="min-w-0 flex-1">
                 <p className="font-display text-sm font-semibold"><T>{"HMS Plastic"}</T></p>
