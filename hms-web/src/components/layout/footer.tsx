@@ -42,7 +42,7 @@ export async function Footer() {
           <Link href="/" aria-label="HMS Plastic — home" className="inline-block rounded-3xl bg-white p-3">
             <Image src="/brand/hms-logo-transparent.webp" alt="HMS Plastic" width={120} height={100} className="h-16 w-auto object-contain" />
           </Link>
-          <p className="mt-6 max-w-sm text-sm leading-relaxed"> <T>{"HMS Plastic designs and supplies sanitary ware and bathroom fittings — practical, well-finished products for modern bathrooms."}</T> </p>
+          <p className="mt-6 max-w-sm text-sm leading-relaxed"> <T>{"HMS Plastic designs and supplies Sanitary Fittings & Bathroom Accessories — practical, well-finished products for modern bathrooms."}</T> </p>
           <SocialIcons className="mt-6" />
         </div>
 

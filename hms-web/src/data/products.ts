@@ -54,32 +54,32 @@ const chrome = { label: "Connector", value: "Chrome-finish" };
 export const products: Product[] = [
   {
     slug: "sink-cock-table-swan",
-    name: "Side Piller Cock",
+    name: "Side Pillar Cock",
     category: "taps-cocks",
-    summary: "A tall swan-neck spout with a single HMS handle for table-mounted sinks.",
+    summary: "A tall swan-neck spout with a single HMS head for table-mounted sinks.",
     images: [
-      img("variants/sink-cock-table-swan-white", "White swan-neck table-mounted sink cock with HMS handle on stone base", 1033, 1523),
+      img("variants/sink-cock-table-swan-white", "White swan-neck table-mounted sink cock with HMS head", 1033, 1523),
     ],
     colorImages: {
-      "White": img("variants/sink-cock-table-swan-white", "White Side Piller Cock", 1033, 1523),
-      "Black": img("variants/sink-cock-table-swan-black", "Black Side Piller Cock", 1033, 1522),
-      "Pink": img("variants/sink-cock-table-swan-pink", "Pink Side Piller Cock", 1033, 1523),
-      "Blue": img("variants/sink-cock-table-swan-blue", "Blue Side Piller Cock", 1033, 1523),
-      "Sage Green": img("variants/sink-cock-table-swan-sage-green", "Sage Green Side Piller Cock", 1033, 1523),
-      "Gray": img("variants/sink-cock-table-swan-gray", "Gray Side Piller Cock", 1033, 1523),
-      "Beige": img("variants/sink-cock-table-swan-beige", "Beige Side Piller Cock", 1033, 1523),
-      "Ivory": img("variants/sink-cock-table-swan-ivory", "Ivory Side Piller Cock", 1033, 1523),
+      "White": img("variants/sink-cock-table-swan-white", "White Side Pillar Cock", 1033, 1523),
+      "Black": img("variants/sink-cock-table-swan-black", "Black Side Pillar Cock", 1033, 1522),
+      "Pink": img("variants/sink-cock-table-swan-pink", "Pink Side Pillar Cock", 1033, 1523),
+      "Blue": img("variants/sink-cock-table-swan-blue", "Blue Side Pillar Cock", 1033, 1523),
+      "Sage Green": img("variants/sink-cock-table-swan-sage-green", "Sage Green Side Pillar Cock", 1033, 1523),
+      "Gray": img("variants/sink-cock-table-swan-gray", "Gray Side Pillar Cock", 1033, 1523),
+      "Beige": img("variants/sink-cock-table-swan-beige", "Beige Side Pillar Cock", 1033, 1523),
+      "Ivory": img("variants/sink-cock-table-swan-ivory", "Ivory Side Pillar Cock", 1033, 1523),
     },
-    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Mounting', value: 'Table / deck' }, { label: 'Handle', value: 'Single, HMS-branded' }, { label: 'Internal', value: 'With brass mohra' }],
+    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Mounting', value: 'Table / deck' }, { label: 'Head', value: 'Single, HMS-branded' }, { label: 'Internal', value: 'With brass mohra' }],
     featured: true,
   },
   {
     slug: "sink-cock-wall-swan",
     name: "Sink Cock",
     category: "taps-cocks",
-    summary: "Wall-mounted swan-neck sink cock with a single HMS handle.",
+    summary: "Wall-mounted swan-neck sink cock with a single HMS head.",
     images: [
-      img("variants/sink-cock-wall-swan-white", "White wall-mounted swan-neck sink cock with HMS handle", 1068, 1473),
+      img("variants/sink-cock-wall-swan-white", "White wall-mounted swan-neck sink cock with HMS head", 1068, 1473),
     ],
     colorImages: {
       "White": img("variants/sink-cock-wall-swan-white", "White Sink Cock", 1068, 1473),
@@ -91,13 +91,13 @@ export const products: Product[] = [
       "Beige": img("variants/sink-cock-wall-swan-beige", "Beige Sink Cock", 1068, 1473),
       "Ivory": img("variants/sink-cock-wall-swan-ivory", "Ivory Sink Cock", 1068, 1473),
     },
-    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Mounting', value: 'Wall' }, { label: 'Handle', value: 'Single, HMS-branded' }, { label: 'Internal', value: 'With brass mohra' }],
+    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Mounting', value: 'Wall' }, { label: 'Head', value: 'Single, HMS-branded' }, { label: 'Internal', value: 'With brass mohra' }],
   },
   {
     slug: "bib-cock-two-way",
     name: "Double BIB Cock",
     category: "taps-cocks",
-    summary: "Two-handle wall bib cock with an additional outlet for hose or appliance connections.",
+    summary: "Two-head wall bib cock with an additional outlet for hose or appliance connections.",
     images: [
       img("variants/bib-cock-two-way-white", "White two-way wall bib cock with two handles and wall flange", 1438, 1094),
     ],
@@ -111,7 +111,7 @@ export const products: Product[] = [
       "Beige": img("variants/bib-cock-two-way-beige", "Beige Double BIB Cock", 1438, 1094),
       "Ivory": img("variants/bib-cock-two-way-ivory", "Ivory Double BIB Cock", 1438, 1094),
     },
-    specs: [white, { label: 'Heads', value: 'Two' }, { label: 'Mounting', value: 'Wall, with flange' }, { label: 'Internal', value: 'With brass mohra' }, { label: 'Available with', value: 'Filter' }],
+    specs: [white, { label: 'Heads', value: 'Two HMS' }, { label: 'Mounting', value: 'Wall, with flange' }, { label: 'Internal', value: 'With brass mohra' }, { label: 'Available with', value: 'Filter' }],
     featured: true,
   },
   {
@@ -132,15 +132,15 @@ export const products: Product[] = [
       "Beige": img("variants/angle-valve-beige", "Beige T Cock", 962, 1634),
       "Ivory": img("variants/angle-valve-ivory", "Ivory T Cock", 962, 1634),
     },
-    specs: [white, { label: 'Internal', value: 'With brass mohra' }],
+    specs: [white, { label: 'Head', value: 'Single, HMS' }, { label: 'Internal', value: 'With brass mohra' }],
   },
   {
     slug: "sink-mixer-wall",
     name: "Sink Mixer",
     category: "mixers",
-    summary: "Two-handle wall mixer with a curved swan-neck spout.",
+    summary: "Two-head wall mixer with a curved swan-neck spout.",
     images: [
-      img("variants/sink-mixer-wall-white", "White wall-mounted sink mixer with two HMS handles and swan-neck spout", 1254, 1254),
+      img("variants/sink-mixer-wall-white", "White wall-mounted sink mixer with two HMS heads and swan-neck spout", 1254, 1254),
     ],
     colorImages: {
       "White": img("variants/sink-mixer-wall-white", "White Sink Mixer", 1254, 1254),
@@ -152,7 +152,7 @@ export const products: Product[] = [
       "Beige": img("variants/sink-mixer-wall-beige", "Beige Sink Mixer", 1254, 1254),
       "Ivory": img("variants/sink-mixer-wall-ivory", "Ivory Sink Mixer", 1254, 1254),
     },
-    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Heads', value: 'Two, HMS-branded' }, { label: 'Mounting', value: 'Wall' }, { label: 'Cup', value: '2 Round Cups' }, { label: 'Internal', value: 'With brass mohra' }],
+    specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Heads', value: 'Two Head' }, { label: 'Mounting', value: 'Wall' }, { label: 'Cup', value: '2 Round Cups' }, { label: 'Internal', value: 'With brass mohra' }],
     featured: true,
   },
   {
@@ -327,7 +327,6 @@ export const products: Product[] = [
     summary: "Square white floor drain with a clean, flush round cover.",
     images: [
       img("variants/floor-drain-plain-white", "Square white floor drain with plain round cover", 1997, 788),
-      img("floor-drain-plain", "Square white floor drain with plain round cover alternate view", 1600, 631),
     ],
     colorImages: {
       "White": img("variants/floor-drain-plain-white", "White Floor Waste", 1997, 788),

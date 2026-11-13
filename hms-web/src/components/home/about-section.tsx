@@ -43,7 +43,7 @@ export function AboutSection() {
         <Reveal delay={0.1}>
           <span className="eyebrow"><T>{"About HMS"}</T></span>
           <h2 className="mt-5 text-[1.9rem] font-medium leading-[1.1] sm:text-4xl lg:text-5xl"><T>{"Built on Quality. Designed for Modern Living."}</T></h2>
-          <p className="mt-5 text-base leading-relaxed text-ink-muted sm:text-lg"> <T>{"HMS Plastic is a sanitary ware brand creating practical, well-finished bathroom fittings — from taps and mixers to shower heads and drains."}</T> </p>
+          <p className="mt-5 text-base leading-relaxed text-ink-muted sm:text-lg"> <T>{"HMS Plastic is a Sanitary Fittings & Bathroom Accessories brand creating practical, well-finished bathroom fittings — from taps and mixers to shower heads and drains."}</T> </p>
           <Tabs defaultValue="quality" className="mt-8">
             <TabsList className="h-auto w-full justify-start gap-1 rounded-full bg-secondary p-1.5">
               {points.map(([v, label]) => (

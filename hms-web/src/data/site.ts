@@ -11,7 +11,7 @@ export const site = {
   name: "HMS Plastic",
   url: env(process.env.NEXT_PUBLIC_SITE_URL) ?? "http://localhost:3000",
   description:
-    "HMS Plastic designs and supplies sanitary ware and bathroom fittings — taps, mixers, shower heads, health faucets, hoses and floor drains.",
+    "HMS Plastic designs and supplies Sanitary Fittings & Bathroom Accessories — taps, mixers, shower heads, health faucets, hoses and floor drains.",
   /** From the HMS catalogue (back page). */
   phones: ["0300-7467419", "0300-4502303"] as readonly string[],
   /** WhatsApp number supplied by the client: +92 321 6401604. */

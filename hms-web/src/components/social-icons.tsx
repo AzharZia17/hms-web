@@ -19,8 +19,6 @@ export const YouTubeIcon = ({ className }: IconProps) => (
 const items = [
   { name: "Facebook", url: site.social.facebook, Icon: FacebookIcon },
   { name: "Instagram", url: site.social.instagram, Icon: InstagramIcon },
-  { name: "TikTok", url: site.social.tiktok, Icon: TikTokIcon },
-  { name: "YouTube", url: site.social.youtube, Icon: YouTubeIcon },
 ];
 
 /**
