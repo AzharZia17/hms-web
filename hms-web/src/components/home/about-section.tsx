@@ -34,7 +34,7 @@ export function AboutSection() {
           <div aria-hidden className="absolute -bottom-6 left-[38%] grid h-28 w-28 place-items-center rounded-full bg-navy text-white shadow-2xl sm:h-32 sm:w-32">
             <svg viewBox="0 0 120 120" className="spin-text absolute inset-0">
               <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
-              <text fontSize="11" fontWeight="700" letterSpacing="3.2" fill="#DC9807"><textPath href="#circ"><T>{"HMS PLASTIC • BATHROOM FITTINGS •"}</T></textPath></text>
+              <text fontSize="11" fontWeight="700" letterSpacing="3.2" fill="#DC9807"><textPath href="#circ"><T>{"HMS PLASTIC • SANITARY FITTING •"}</T></textPath></text>
             </svg>
             <span className="font-display text-xl font-extrabold"><T>{"HMS"}</T></span>
           </div>
@@ -43,7 +43,7 @@ export function AboutSection() {
         <Reveal delay={0.1}>
           <span className="eyebrow"><T>{"About HMS"}</T></span>
           <h2 className="mt-5 text-[1.9rem] font-medium leading-[1.1] sm:text-4xl lg:text-5xl"><T>{"Built on Quality. Designed for Modern Living."}</T></h2>
-          <p className="mt-5 text-base leading-relaxed text-ink-muted sm:text-lg"> <T>{"HMS Plastic is a Sanitary Fittings & Bathroom Accessories brand creating practical, well-finished bathroom fittings — from taps and mixers to shower heads and drains."}</T> </p>
+          <p className="mt-5 text-base leading-relaxed text-ink-muted sm:text-lg"> <T>{"HMS Plastic is a Plastic Sanitary Fitting & Bathroom Accessories brand creating practical, well-finished products — from taps and mixers to shower heads and drains."}</T> </p>
           <Tabs defaultValue="quality" className="mt-8">
             <TabsList className="h-auto w-full justify-start gap-1 rounded-full bg-secondary p-1.5">
               {points.map(([v, label]) => (

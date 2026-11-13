@@ -7,7 +7,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { T } from "@/components/t";
 import { useLang } from "@/lib/i18n/lang-provider";
 
-const text = "Clean lines. Considered details. Everyday reliability. Bathroom fittings designed to be lived with, season after season.";
+const text = "Clean lines. Considered details. Everyday reliability. Plastic Sanitary Fitting & Bathroom Accessories designed to be lived with, season after season.";
 
 /** The one special visual section: Aceternity's Text Generate Effect on a quiet navy field. */
 export function Statement() {

@@ -20,7 +20,7 @@ export function CatalogueSection() {
               <div>
                 <span className="eyebrow"><T>{"Catalogue"}</T></span>
                 <h2 className="mt-4 text-[1.7rem] font-medium leading-[1.1] sm:text-4xl"><T>{"Browse the full HMS catalogue."}</T></h2>
-                <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-muted"> <T>{"Plastic sanitary fittings and bathroom accessories — every product in one PDF."}</T> </p>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-ink-muted"> <T>{"Plastic Sanitary Fitting & Bathroom Accessories — every product in one PDF."}</T> </p>
               </div>
             </div>
             <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row">

@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { T } from "@/components/t";
 
 const faqs = [
-  ["What does HMS Plastic make?", "HMS Plastic offers sanitary ware and bathroom fittings, including taps and cocks, mixers, shower heads, health faucets, shower hoses and floor drains."],
+  ["What does HMS Plastic make?", "HMS Plastic offers Plastic Sanitary Fitting & Bathroom Accessories, including taps and cocks, mixers, shower heads, health faucets, shower hoses and floor drains."],
   ["How do I enquire about a product?", "Open any product page and use the Enquire button, or message us directly on WhatsApp — the chat button is on every page."],
   ["Where can I find full specifications and product codes?", "Product pages show the details we can confirm from the product itself. Dimensions, thread sizes and catalogue codes are shared on request through an enquiry."],
   ["What colours are available?", "Every HMS product is available in White, Black, Pink, Blue, Sage Green, Gray, Beige and Ivory. Our photos show the white finish — tell us your colour when you enquire."],

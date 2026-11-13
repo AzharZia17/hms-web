@@ -12,7 +12,7 @@ import { T } from "@/components/t";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about HMS Plastic — our approach to design, quality and customer service in Sanitary Fittings & Bathroom Accessories.",
+  description: "Learn about HMS Plastic — our approach to design, quality and customer service in Plastic Sanitary Fitting & Bathroom Accessories.",
   alternates: { canonical: "/about" },
 };
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Practical design, carefully made."
-        description="HMS Plastic creates Sanitary Fittings & Bathroom Accessories that balance clean design with dependable everyday performance."
+        description="HMS Plastic creates Plastic Sanitary Fitting & Bathroom Accessories that balance clean design with dependable everyday performance."
       />
       <AboutSection />
       <section className="bg-secondary/70 py-24 lg:py-32">

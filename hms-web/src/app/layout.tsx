@@ -19,7 +19,7 @@ export const viewport: Viewport = { themeColor: "#002D60" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "HMS Plastic — Premium Sanitary Ware & Bathroom Fittings", template: "%s | HMS Plastic" },
+  title: { default: "HMS Plastic — Plastic Sanitary Fitting & Bathroom Accessories", template: "%s | HMS Plastic" },
   description: site.description,
   openGraph: {
     type: "website",

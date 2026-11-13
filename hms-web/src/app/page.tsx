@@ -7,7 +7,7 @@ import { FeaturedProducts } from "@/components/home/featured-products";
 import { CtaSection } from "@/components/home/cta-section";
 
 export const metadata: Metadata = {
-  title: { absolute: "HMS Plastic — Premium Sanitary Ware & Bathroom Fittings" },
+  title: { absolute: "HMS Plastic — Plastic Sanitary Fitting & Bathroom Accessories" },
   alternates: { canonical: "/" },
 };
 
