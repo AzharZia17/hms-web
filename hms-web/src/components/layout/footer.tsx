@@ -82,7 +82,38 @@ export async function Footer() {
       </Container>
       <div className="relative border-t border-white/10">
         <Container className="flex flex-col items-start justify-between gap-4 pb-28 pt-6 text-xs sm:flex-row sm:items-center lg:pb-6">
-          <p>© {year} <T>{"HMS Plastic"}</T> · <T>{site.trademark}</T> · <T>{"A Product by Four Brothers."}</T> <T>{"All rights reserved."}</T></p>
+          <div className="flex flex-col gap-2">
+            <p>© {year} <T>{"HMS Plastic"}</T> · <T>{site.trademark}</T> · <T>{"A Product by Four Brothers."}</T> <T>{"All rights reserved."}</T></p>
+            <div className="flex items-center gap-2.5 text-[11px] text-white/60">
+              <span className="font-medium tracking-wide"><T>{"Powered By 9T Solutions"}</T></span>
+              <a
+                href="https://www.9tsolutions.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="9T Solutions website"
+                title="9T Solutions"
+                className="inline-flex items-center rounded-lg bg-white px-2 py-0.5 shadow-xs ring-1 ring-black/5 transition-transform hover:scale-105 active:scale-95"
+              >
+                <Image
+                  src="/brand/9t-solutions.webp"
+                  alt="9T Solutions"
+                  width={680}
+                  height={545}
+                  className="h-3.5 sm:h-4 w-auto object-contain"
+                />
+              </a>
+              <a
+                href="https://wa.me/92323747816"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with 9T Solutions on WhatsApp"
+                title="WhatsApp 0323-747816"
+                className="inline-flex items-center justify-center rounded-full text-[#25D366] transition-transform hover:scale-110 active:scale-95"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-2.5">
               <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">

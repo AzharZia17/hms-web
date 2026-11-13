@@ -197,6 +197,7 @@ export const ur: Record<string, string> = {
  "No other colours available.": "کوئی اور رنگ دستیاب نہیں۔",
  "Wall Shower": "وال شاور",
  "Project by": "پروجیکٹ از",
+ "Powered By 9T Solutions": "پاورڈ بائی 9T سلوشنز",
  "A Product by Four Brothers.": "فور برادرز کی پروڈکٹ۔",
  "HMS Plastic — A Product by Four Brothers": "ایچ ایم ایس پلاسٹک — فور برادرز کی پروڈکٹ",
  "A Product by Four Brothers": "فور برادرز کی پروڈکٹ",
