@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 64, 128, 256, 384, 512],
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/products/wall-mixer-3in1",
+        destination: "/products/wall-shower",
+        permanent: false,
+      },
+    ];
+  },
+
   turbopack: {
     rules: {
       "*.css": {

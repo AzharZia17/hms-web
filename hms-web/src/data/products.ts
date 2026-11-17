@@ -8,6 +8,7 @@ import type { Product, ProductImage } from "@/types/product";
 /** Frame colour sampled from each photo's own edges so letterboxing blends in. */
 const BG: Record<string, string> = {
   "angle-valve": "#000000",
+  "bib-cock": "#000000",
   "bib-cock-two-way": "#000000",
   "floor-drain-plain": "#000000",
   "floor-drain-star": "#000000",
@@ -22,6 +23,7 @@ const BG: Record<string, string> = {
   "sink-mixer-pillar": "#000000",
   "sink-mixer-wall": "#000000",
   "wall-mixer-3in1": "#000000",
+  "wall-shower": "#000000",
 };
 
 const img = (
@@ -92,6 +94,27 @@ export const products: Product[] = [
       "Ivory": img("variants/sink-cock-wall-swan-ivory", "Ivory Sink Cock", 1068, 1473),
     },
     specs: [white, { label: 'Spout', value: 'Swan-neck' }, { label: 'Filter', value: 'With Filter' }, { label: 'Mounting', value: 'Wall' }, { label: 'Head', value: 'Single, HMS-branded' }, { label: 'Internal', value: 'With brass mohra' }],
+  },
+  {
+    slug: "bib-cock",
+    name: "BIB Cock",
+    category: "taps-cocks",
+    summary: "Wall-mounted single bib cock with signature HMS head and round wall flange.",
+    images: [
+      img("variants/bib-cock-white", "White wall bib cock with HMS head and wall flange", 1323, 1189),
+    ],
+    colorImages: {
+      "White": img("variants/bib-cock-white", "White BIB Cock", 1323, 1189),
+      "Black": img("variants/bib-cock-black", "Black BIB Cock", 1322, 1190),
+      "Pink": img("variants/bib-cock-pink", "Pink BIB Cock", 1323, 1189),
+      "Blue": img("variants/bib-cock-blue", "Blue BIB Cock", 1325, 1187),
+      "Sage Green": img("variants/bib-cock-sage-green", "Sage Green BIB Cock", 1323, 1189),
+      "Gray": img("variants/bib-cock-gray", "Gray BIB Cock", 1323, 1189),
+      "Beige": img("variants/bib-cock-beige", "Beige BIB Cock", 1024, 920),
+      "Ivory": img("variants/bib-cock-ivory", "Ivory BIB Cock", 1323, 1189),
+    },
+    specs: [white, { label: 'Head', value: 'Single, HMS-branded' }, { label: 'Mounting', value: 'Wall, with flange' }, { label: 'Internal', value: 'With brass mohra' }, { label: 'Available with', value: 'Filter' }],
+    featured: true,
   },
   {
     slug: "bib-cock-two-way",
@@ -177,23 +200,25 @@ export const products: Product[] = [
     featured: true,
   },
   {
-    slug: "wall-mixer-3in1",
+    slug: "wall-shower",
     name: "Wall Shower",
     category: "mixers",
-    summary: "Three-handle wall mixer combining a spout and an upper outlet for bath and shower use.",
+    summary: "Four-handle wall mixer combining a spout and an upper outlet for bath and shower use.",
     images: [
-      img("variants/wall-mixer-3in1-white", "White wall shower mixer with three HMS-branded handles", 1254, 1254),
+      img("variants/wall-shower-white", "White Wall Shower with four HMS-branded handles", 930, 1692),
     ],
     colorImages: {
-      "White": img("variants/wall-mixer-3in1-white", "White Wall Shower", 1254, 1254),
-      "Black": img("variants/wall-mixer-3in1-black", "Black Wall Shower", 1254, 1254),
-      "Blue": img("variants/wall-mixer-3in1-blue", "Blue Wall Shower", 1254, 1254),
-      "Sage Green": img("variants/wall-mixer-3in1-sage-green", "Sage Green Wall Shower", 1254, 1254),
-      "Gray": img("variants/wall-mixer-3in1-gray", "Gray Wall Shower", 1254, 1254),
-      "Beige": img("variants/wall-mixer-3in1-beige", "Beige Wall Shower", 1254, 1254),
-      "Ivory": img("variants/wall-mixer-3in1-ivory", "Ivory Wall Shower", 1254, 1254),
+      "White": img("variants/wall-shower-white", "White Wall Shower", 930, 1692),
+      "Black": img("variants/wall-shower-black", "Black Wall Shower", 929, 1693),
+      "Pink": img("variants/wall-shower-pink", "Pink Wall Shower", 929, 1693),
+      "Blue": img("variants/wall-shower-blue", "Blue Wall Shower", 929, 1693),
+      "Sage Green": img("variants/wall-shower-sage-green", "Sage Green Wall Shower", 929, 1693),
+      "Gray": img("variants/wall-shower-gray", "Gray Wall Shower", 929, 1693),
+      "Beige": img("variants/wall-shower-beige", "Beige Wall Shower", 929, 1693),
+      "Ivory": img("variants/wall-shower-ivory", "Ivory Wall Shower", 930, 1692),
     },
-    specs: [white, { label: 'Heads', value: 'Three, HMS-branded' }, { label: 'Mounting', value: 'Wall' }, { label: 'Internal', value: 'With brass mohra' }],
+    specs: [white, { label: 'Heads', value: 'Four, HMS-Branded' }, { label: 'Mounting', value: 'Wall' }, { label: 'Internal', value: 'With brass mohra' }],
+    featured: true,
   },
   {
     slug: "shower-head-round",
@@ -343,7 +368,8 @@ export const products: Product[] = [
 
 ];
 
-export const getProduct = (slug: string) => products.find((p) => p.slug === slug);
+export const getProduct = (slug: string) =>
+  products.find((p) => p.slug === slug || (slug === "wall-mixer-3in1" && p.slug === "wall-shower"));
 export const productsByCategory = (category: string) => products.filter((p) => p.category === category);
 export const featuredProducts = products.filter((p) => p.featured);
 export const relatedProducts = (p: Product, n = 4) => {

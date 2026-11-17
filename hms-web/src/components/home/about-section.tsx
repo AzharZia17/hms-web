@@ -14,7 +14,7 @@ const points = [
 ] as const;
 
 export function AboutSection() {
-  const a = getProduct("wall-mixer-3in1")!;
+  const a = getProduct("wall-shower")!;
   const b = getProduct("sink-cock-wall-swan")!;
   const c = getProduct("shower-head-square")!;
   return (

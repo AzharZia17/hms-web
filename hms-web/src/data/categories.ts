@@ -11,7 +11,7 @@ export const categories: Category[] = [
     slug: "mixers",
     name: "Mixers",
     description: "Sink, basin and wall mixers, including a wall shower mixer for bath and shower.",
-    coverProduct: "wall-mixer-3in1",
+    coverProduct: "wall-shower",
   },
   {
     slug: "shower-heads",
@@ -47,7 +47,7 @@ export const collections: Collection[] = [
     description:
       "Overhead shower heads, health faucets and flexible hoses — designed to work together in one clean, white finish.",
     categories: ["shower-heads", "health-faucets", "shower-hoses"],
-    coverProduct: "wall-mixer-3in1",
+    coverProduct: "wall-shower",
   },
   {
     slug: "taps-and-mixers",

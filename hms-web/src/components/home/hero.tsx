@@ -25,7 +25,7 @@ const headlines = {
   en: [{ w: "Redefining" }, { w: "Modern" }, { w: "Bathroom", gold: true }, { w: "Living." }],
   ur: [{ w: "جدید" }, { w: "باتھ روم", gold: true }, { w: "طرزِ زندگی" }, { w: "کی" }, { w: "نئی" }, { w: "تعریف۔" }],
 } as const;
-const SLIDES = ["shower-head-round", "sink-mixer-pillar", "wall-mixer-3in1", "health-faucet-chrome", "shower-hose-chrome"].map((s) => getProduct(s)!);
+const SLIDES = ["shower-head-round", "sink-mixer-pillar", "wall-shower", "health-faucet-chrome", "shower-hose-chrome"].map((s) => getProduct(s)!);
 const INTERVAL = 5200;
 
 /** Wraps a CTA so it gently follows the pointer (fine pointers only). */
