@@ -9,7 +9,7 @@ const digits = (v?: string) => v?.replace(/[^\d]/g, "");
 
 export const site = {
   name: "HMS Plastic",
-  url: env(process.env.NEXT_PUBLIC_SITE_URL) ?? "http://localhost:3000",
+  url: env(process.env.NEXT_PUBLIC_SITE_URL) ?? "https://www.hmsplastic.com/",
   description:
     "HMS Plastic designs and supplies Plastic Sanitary Fitting & Bathroom Accessories — taps, mixers, shower heads, health faucets, hoses and floor drains.",
   /** From the HMS catalogue (back page). */
